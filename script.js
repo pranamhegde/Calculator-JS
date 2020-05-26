@@ -7,7 +7,7 @@ var numberOfButtons = document.querySelectorAll(".number").length;
 for( var i = 0; i < numberOfButtons; i++){
     document.querySelectorAll(".number")[i].addEventListener("click", function() {
         // var display = document.getElementsByClassName("btn").value;
-        //  document.querySelector(".input").innerHTML = "45"; //Incorrect as ot updates only the string
+        //  document.querySelector(".input").innerHTML = "45"; //Incorrect as it updates only the string
         var calcNumber = document.querySelector(".number").value;
         document.querySelector(".input").value = parseInt(document.querySelector(".input").value);
         document.querySelector(".input").value += parseInt(calcNumber);
@@ -23,21 +23,27 @@ for( var i = 0; i < numberOfButtons; i++){
     document.querySelectorAll(".operator").addEventListener("click", function(){
         var operate;
 
+        operate = document.querySelector(.operator).value;
+
         switch (operate) {
             case '+':
-                document.querySelector(".input") += document.querySelector(".number").value;
+                document.querySelector(".input").value += document.querySelector(".number").value;
                 break;
 
             case '-':
-                document.querySelector(".input") -= document.querySelector(".number").value;
+                document.querySelector(".input").value -= document.querySelector(".number").value;
                 break;
 
             case '*':
-                document.querySelector(".input") *= document.querySelector(".number").value;
+                document.querySelector(".input").value *= document.querySelector(".number").value;
                 break;
 
             case '/':
-                document.querySelector(".input") /= document.querySelector(".number").value;
+                document.querySelector(".input").value /= document.querySelector(".number").value;
+                break;
+            case '%':
+                document.querySelector(".input").value /= document.querySelector(".number").value;
+                document.querySelector(".input").value *= 100;
                 break;
             
         
