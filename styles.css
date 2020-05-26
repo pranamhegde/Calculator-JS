@@ -1,0 +1,44 @@
+body{
+   
+    text-align: center;
+}
+
+
+.input{
+    width: 285px;
+    height: 30px;
+}
+.topmost-row{
+    margin-top: 20px;
+}
+
+.button{
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.btn{
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    
+}
+
+.btn:active{
+    font-size: 12px;
+}
+
+.zero-row{
+    display: inline-block;
+
+}
+
+.btn-0{
+    width: 220px;
+    
+    align-items: left;
+    
+}
+
