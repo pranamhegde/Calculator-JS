@@ -7,6 +7,7 @@ body{
 .input{
     width: 285px;
     height: 30px;
+    font-family: cursive;
 }
 .topmost-row{
     margin-top: 20px;
@@ -16,6 +17,7 @@ body{
     margin: auto;
     display: block;
     text-align: center;
+  
 }
 
 .btn{
@@ -23,6 +25,7 @@ body{
     width: 70px;
     height: 70px;
     background-color: orange;
+    /*border: 1px solid black;*/
     
 }
 
