@@ -22,31 +22,35 @@ for( var i = 0; i < numberOfButtons; i++){
 
     function onClickAC () {
         document.querySelector("input").value = 0;
+        
     }
 
-    document.querySelectorAll(".operator").addEventListener("click", function(){
+    var numberOfOperators = document.querySelectorAll(".operator").length;
+
+    for(i = 0; i < numberOfOperators; i++)
+    document.querySelectorAll(".operator")[i].addEventListener("click", function(){
         var operate;
-
-        operate = document.querySelector(".operator").value;
-
+        
+        operate = this.value;
+        alert(operate);
         switch (operate) {
             case '+':
-                document.querySelector(".input").value += document.querySelector(".number").value;
+                document.querySelector(".input").value += document.querySelectorAll(".number").value;
                 break;
 
             case '-':
-                document.querySelector(".input").value -= document.querySelector(".number").value;
+                document.querySelector(".input").value -= document.querySelectorAll(".number").value;
                 break;
 
             case '*':
-                document.querySelector(".input").value *= document.querySelector(".number").value;
+                document.querySelector(".input").value *= document.querySelectorAll(".number").value;
                 break;
 
             case '/':
-                document.querySelector(".input").value /= document.querySelector(".number").value;
+                document.querySelector(".input").value /= document.querySelectorAll(".number").value;
                 break;
             case '%':
-                document.querySelector(".input").value /= document.querySelector(".number").value;
+                document.querySelector(".input").value /= document.querySelectorAll(".number").value;
                 document.querySelector(".input").value *= 100;
                 break;
             
