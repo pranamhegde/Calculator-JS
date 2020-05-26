@@ -23,7 +23,7 @@ for( var i = 0; i < numberOfButtons; i++){
     document.querySelectorAll(".operator").addEventListener("click", function(){
         var operate;
 
-        operate = document.querySelector(.operator).value;
+        operate = document.querySelector(".operator").value;
 
         switch (operate) {
             case '+':
