@@ -34,36 +34,44 @@ for( var i = 0; i < numberOfButtons; i++){
         operate = this.value;
         num1 = document.querySelector(".input").value;
         num2 = numValue;
-        alert(num1);
-        alert(num2);
+        // alert(num1);
+        // alert(num2);
         var result;
         
         switch (operate) {
             case '+':
+               document.querySelector(".input").value = 0;
                result = parseInt(num1) + parseInt(num2);
                document.querySelector(".input") = result;
-                break;
+               break;
 
             case '-':
+                document.querySelector(".input").value = 0;
                 result = parseInt(num1) - parseInt(num2);
                 document.querySelector(".input") = result;
                 break;
 
             case '*':
+                document.querySelector(".input").value = 0;
                 result = parseInt(num1) * parseInt(num2);
                 document.querySelector(".input") = result;
                 break;
 
             case '/':
+                document.querySelector(".input").value = 0;
                 result = parseInt(num1) / parseInt(num2);
                 document.querySelector(".input") = result;
                 break;
-            case '%':
+            case '%': 
+                document.querySelector(".input").value = 0;
                 result = parseInt(num1) / parseInt(num2);
                 result *= 100;
                 document.querySelector(".input") = result;
                 break;
             
+            case '=':
+                document.querySelector(".input") = result;
+                break;
         
             default:
                 console.log("Default");

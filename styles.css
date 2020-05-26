@@ -6,7 +6,8 @@ body{
 
 .input{
     width: 285px;
-    height: 30px;
+    height: 40px;
+    font-size: 25px;
     font-family: cursive;
 }
 .topmost-row{
