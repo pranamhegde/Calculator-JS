@@ -27,7 +27,7 @@ for( var i = 0; i < numberOfButtons; i++){
 
     function inputBottomUpdate(){
         document.querySelectorAll(".input")[1].value = result;
-        alert(document.querySelectorAll(".inpu")[1].value);
+        alert(document.querySelectorAll(".inpu")[1].value)
     }
 
 
