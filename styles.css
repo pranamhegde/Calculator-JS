@@ -5,8 +5,8 @@ body{
 
 
 .input{
-    width: 285px;
-    height: 40px;
+    width: 365px;
+    height: 60px;
     font-size: 25px;
     font-family: cursive;
 }
@@ -23,8 +23,8 @@ body{
 
 .btn{
     margin-top: 10px;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     background-color: orange;
     /*border: 1px solid black;*/
     
@@ -40,8 +40,7 @@ body{
 }
 
 .btn-0{
-    width: 220px;
-    
+    width: 280px;  
     align-items: left;
     
 }
